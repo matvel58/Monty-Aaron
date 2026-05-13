@@ -1167,9 +1167,25 @@ a { color: inherit; }
   .footer-section { padding-left: 42px; padding-right: 42px; }
 }
 
+@media (max-width: 720px) {
+  /* tighten the hero title so MONTY-AARON fits on phones; desktop untouched */
+  .hero-title { letter-spacing: 2.5px; }
+  .hero-title .line1 {
+    font-size: clamp(28px, 11vw, 64px);
+    text-shadow:
+      3px 3px 0 var(--navy),
+      6px 6px 0 rgba(58, 42, 28, .28);
+  }
+}
+
 @media (max-width: 480px) {
-  .hero-title .line1 { font-size: 64px; }
-  .hero-title .line2 { font-size: 48px; }
+  .hero-title { letter-spacing: 1.5px; }
+  .hero-title .line1 {
+    font-size: clamp(24px, 10vw, 48px);
+    text-shadow:
+      2px 2px 0 var(--navy),
+      5px 5px 0 rgba(58, 42, 28, .26);
+  }
   .btn { padding: 14px 22px; font-size: 14px; letter-spacing: 1.4px; }
   .btn.big { padding: 16px 24px; font-size: 15px; }
   .key-h { font-size: 36px; }
