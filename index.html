@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monty-Aaron | Solana</title>
+    <meta
+      name="description"
+      content="Monty-Aaron is a baby elephant rescued by Following Giants (funded by World Animal Protection). 250M views in 3 days, breaking every internet record. Now live on Solana — fees donated to World Animal Protection."
+    />
+    <meta property="og:title" content="Monty-Aaron | Solana" />
+    <meta
+      property="og:description"
+      content="The runner of 2026. A baby elephant breaking the internet — saved by Following Giants. Live on Solana. Fees → World Animal Protection."
+    />
+    <meta property="og:image" content="assets/monty-mascot.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="assets/monty-mascot.png" />
+    <link rel="icon" type="image/png" href="assets/monty-mascot.png" />
+    <link rel="apple-touch-icon" href="assets/monty-mascot.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Fredoka:wght@500;600;700&family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ================== HERO ================== -->
+    <section class="hero" id="top">
+      <!-- Top: X pill only (right) -->
+      <div class="hero-topbar">
+        <div class="hero-socials">
+          <a
+            href="https://x.com/montaronfansol"
+            target="_blank"
+            rel="noopener"
+            class="hero-pill x"
+            aria-label="X / Twitter"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18.244 2H21.5l-7.5 8.57L23 22h-6.79l-5.32-6.96L4.77 22H1.5l8.04-9.19L1 2h6.91l4.81 6.36L18.24 2z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Layered parallax stage (illustrated SVG scene) -->
+      <div class="hero-stage" data-parallax-root>
+        <!-- Sky glow -->
+        <div class="layer layer-sky" aria-hidden="true"></div>
+
+        <!-- ===== SUN (with face) ===== -->
+        <div class="layer layer-sun" data-parallax="0.06" aria-hidden="true">
+          <svg class="art-sun" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="sunGrad" cx="40%" cy="40%">
+                <stop offset="0%" stop-color="#fff5b8" />
+                <stop offset="55%" stop-color="#ffd166" />
+                <stop offset="100%" stop-color="#ff9a3c" />
+              </radialGradient>
+            </defs>
+            <g class="sun-rays-anim">
+              <g fill="#ffd166">
+                <polygon points="160,8 170,60 150,60" />
+                <polygon points="160,312 170,260 150,260" />
+                <polygon points="8,160 60,150 60,170" />
+                <polygon points="312,160 260,150 260,170" />
+                <polygon points="44,44 86,82 80,88" />
+                <polygon points="276,44 234,82 240,88" />
+                <polygon points="44,276 86,238 80,232" />
+                <polygon points="276,276 234,238 240,232" />
+              </g>
+            </g>
+            <circle cx="160" cy="160" r="94" fill="url(#sunGrad)" stroke="#e5a900" stroke-width="4" />
+            <ellipse cx="120" cy="178" rx="14" ry="9" fill="#ff8fa3" opacity="0.7" />
+            <ellipse cx="200" cy="178" rx="14" ry="9" fill="#ff8fa3" opacity="0.7" />
+            <path d="M 130 140 Q 138 126 148 140" stroke="#4a2a00" stroke-width="5" fill="none" stroke-linecap="round" />
+            <path d="M 172 140 Q 180 126 190 140" stroke="#4a2a00" stroke-width="5" fill="none" stroke-linecap="round" />
+            <path d="M 135 188 Q 160 212 185 188" stroke="#4a2a00" stroke-width="5" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- ===== CLOUDS ===== -->
+        <div class="layer layer-clouds" data-parallax="0.1" aria-hidden="true">
+          <svg class="art-cloud cloud-1" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#fff" stroke="#cfdfe8" stroke-width="2.5">
+              <ellipse cx="60" cy="80" rx="50" ry="28" />
+              <ellipse cx="115" cy="58" rx="50" ry="40" />
+              <ellipse cx="175" cy="55" rx="55" ry="42" />
+              <ellipse cx="235" cy="78" rx="55" ry="32" />
+              <ellipse cx="150" cy="92" rx="120" ry="20" />
+            </g>
+            <circle cx="135" cy="64" r="4" fill="#333" />
+            <circle cx="175" cy="64" r="4" fill="#333" />
+            <path d="M 145 80 Q 155 88 165 80" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          </svg>
+          <svg class="art-cloud cloud-2" viewBox="0 0 260 100" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#fff" stroke="#cfdfe8" stroke-width="2.5">
+              <ellipse cx="55" cy="65" rx="42" ry="22" />
+              <ellipse cx="105" cy="48" rx="45" ry="34" />
+              <ellipse cx="160" cy="50" rx="48" ry="36" />
+              <ellipse cx="205" cy="62" rx="42" ry="24" />
+              <ellipse cx="130" cy="76" rx="100" ry="18" />
+            </g>
+            <circle cx="120" cy="56" r="3.5" fill="#333" />
+            <circle cx="155" cy="56" r="3.5" fill="#333" />
+            <path d="M 128 70 Q 137 76 146 70" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round" />
+          </svg>
+          <svg class="art-cloud cloud-3" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#fff" stroke="#cfdfe8" stroke-width="2">
+              <ellipse cx="40" cy="50" rx="32" ry="18" />
+              <ellipse cx="80" cy="38" rx="35" ry="26" />
+              <ellipse cx="125" cy="42" rx="38" ry="28" />
+              <ellipse cx="160" cy="50" rx="32" ry="20" />
+              <ellipse cx="100" cy="60" rx="80" ry="14" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- ===== MOUNTAINS / HILLS ===== -->
+        <div class="layer layer-mountains" data-parallax="0.18" aria-hidden="true"></div>
+
+        <!-- ===== MID JUNGLE silhouette ===== -->
+        <div class="layer layer-jungle-mid" data-parallax="0.28" aria-hidden="true"></div>
+
+        <!-- ===== BUTTERFLIES (floating) ===== -->
+        <div class="layer layer-butterflies" data-parallax="0.35" aria-hidden="true">
+          <svg class="art-butterfly bf-1" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50" cy="40" rx="3" ry="22" fill="#1a1a1a" />
+            <path d="M 48 22 Q 42 12 38 16" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round" />
+            <path d="M 52 22 Q 58 12 62 16" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round" />
+            <g fill="#ff8fa3" stroke="#1a1a1a" stroke-width="1.8">
+              <path d="M 50 28 Q 8 3 4 30 Q 0 50 50 44 Z" />
+              <path d="M 50 28 Q 92 3 96 30 Q 100 50 50 44 Z" />
+              <path d="M 50 46 Q 13 50 8 72 Q 22 80 50 56 Z" />
+              <path d="M 50 46 Q 87 50 92 72 Q 78 80 50 56 Z" />
+            </g>
+            <circle cx="22" cy="24" r="4.5" fill="#fff5b8" />
+            <circle cx="78" cy="24" r="4.5" fill="#fff5b8" />
+            <circle cx="20" cy="62" r="3" fill="#fff5b8" />
+            <circle cx="80" cy="62" r="3" fill="#fff5b8" />
+          </svg>
+          <svg class="art-butterfly bf-2" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50" cy="40" rx="3" ry="22" fill="#1a1a1a" />
+            <path d="M 48 22 Q 42 12 38 16" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round" />
+            <path d="M 52 22 Q 58 12 62 16" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round" />
+            <g fill="#9fdcff" stroke="#1a1a1a" stroke-width="1.8">
+              <path d="M 50 28 Q 8 3 4 30 Q 0 50 50 44 Z" />
+              <path d="M 50 28 Q 92 3 96 30 Q 100 50 50 44 Z" />
+              <path d="M 50 46 Q 13 50 8 72 Q 22 80 50 56 Z" />
+              <path d="M 50 46 Q 87 50 92 72 Q 78 80 50 56 Z" />
+            </g>
+            <circle cx="22" cy="24" r="4.5" fill="#fff" />
+            <circle cx="78" cy="24" r="4.5" fill="#fff" />
+          </svg>
+        </div>
+
+        <!-- ===== FLOOR / GROUND ===== -->
+        <div class="layer layer-floor" aria-hidden="true"></div>
+
+        <!-- ===== MONTY ELEPHANT (illustrated PNG) ===== -->
+        <div class="layer layer-mascot" data-parallax="0.55">
+          <img class="art-monty" src="assets/monty-mascot.png" alt="Monty-Aaron the baby elephant in a black tub" loading="eager" decoding="async" width="1120" height="928" />
+          <!-- Animated water splash dots around the tub (overlay) -->
+          <svg class="art-splash" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="splash-l">
+              <circle cx="60" cy="100" r="8" fill="#cfeaf3" stroke="#6ba7c4" stroke-width="2" />
+              <circle cx="30" cy="135" r="5" fill="#cfeaf3" stroke="#6ba7c4" stroke-width="1.5" />
+              <circle cx="95" cy="155" r="6" fill="#cfeaf3" stroke="#6ba7c4" stroke-width="1.5" />
+              <path d="M 130 70 Q 122 90 138 90 Q 140 72 130 70 Z" fill="#cfeaf3" stroke="#6ba7c4" stroke-width="1.5" />
+            </g>
+            <g class="splash-r">
+              <circle cx="740" cy="100" r="8" fill="#cfeaf3" stroke="#6ba7c4" stroke-width="2" />
+              <circle cx="770" cy="135" r="5" fill="#cfeaf3" stroke="#6ba7c4" stroke-width="1.5" />
+              <circle cx="705" cy="155" r="6" fill="#cfeaf3" stroke="#6ba7c4" stroke-width="1.5" />
+              <path d="M 670 70 Q 662 90 678 90 Q 680 72 670 70 Z" fill="#cfeaf3" stroke="#6ba7c4" stroke-width="1.5" />
+            </g>
+          </svg>
+        </div>
+
+
+        <!-- ===== PALM TREES (left/right foreground) ===== -->
+        <div class="layer layer-palm-left" data-parallax="0.7" aria-hidden="true">
+          <svg class="art-palm" viewBox="0 0 400 700" xmlns="http://www.w3.org/2000/svg">
+            <!-- Trunk -->
+            <path d="M 175 700 Q 158 540 178 380 Q 200 230 188 110" stroke="#7a4a2a" stroke-width="36" stroke-linecap="round" fill="none" />
+            <!-- Trunk rings -->
+            <g stroke="#4a2c1a" stroke-width="3" fill="none" opacity="0.55">
+              <path d="M 158 680 Q 196 678 200 680" />
+              <path d="M 161 620 Q 198 618 202 620" />
+              <path d="M 165 560 Q 198 558 204 560" />
+              <path d="M 170 500 Q 200 498 206 500" />
+              <path d="M 176 440 Q 202 438 208 440" />
+              <path d="M 182 380 Q 204 378 208 380" />
+              <path d="M 188 320 Q 208 318 212 320" />
+              <path d="M 194 260 Q 212 258 216 260" />
+              <path d="M 198 200 Q 216 198 220 200" />
+            </g>
+            <!-- Coconuts -->
+            <circle cx="160" cy="120" r="16" fill="#5a3220" stroke="#3a2010" stroke-width="2" />
+            <circle cx="200" cy="125" r="16" fill="#5a3220" stroke="#3a2010" stroke-width="2" />
+            <circle cx="180" cy="138" r="14" fill="#4a2818" stroke="#2a1408" stroke-width="2" />
+            <!-- Fronds (back) -->
+            <g fill="#0f5a2a" stroke="#073d20" stroke-width="2.5">
+              <path d="M 188 100 Q 60 30 0 90 Q 90 70 188 105 Z" />
+              <path d="M 188 100 Q 80 90 0 200 Q 100 160 188 110 Z" />
+              <path d="M 188 100 Q 50 180 10 290 Q 110 200 195 115 Z" />
+              <path d="M 188 100 Q 320 30 380 90 Q 280 70 188 105 Z" />
+              <path d="M 188 100 Q 300 90 380 200 Q 280 160 188 110 Z" />
+              <path d="M 188 100 Q 330 180 380 290 Q 270 200 195 115 Z" />
+            </g>
+            <!-- Fronds (front, brighter) -->
+            <g fill="#1f7a3d" opacity="0.85">
+              <path d="M 188 105 Q 100 90 30 110 Q 110 100 188 115 Z" />
+              <path d="M 188 105 Q 275 90 350 110 Q 275 100 188 115 Z" />
+              <path d="M 188 100 Q 195 30 175 -20 Q 195 30 188 100 Z" />
+            </g>
+            <!-- Leaf veins -->
+            <g stroke="#063d1e" stroke-width="2" fill="none" opacity="0.7">
+              <path d="M 188 100 L 25 95" />
+              <path d="M 188 100 L 25 195" />
+              <path d="M 188 100 L 18 285" />
+              <path d="M 188 100 L 350 95" />
+              <path d="M 188 100 L 350 195" />
+              <path d="M 188 100 L 360 285" />
+            </g>
+          </svg>
+        </div>
+        <div class="layer layer-palm-right" data-parallax="0.7" aria-hidden="true">
+          <svg class="art-palm" viewBox="0 0 400 700" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 225 700 Q 242 540 222 380 Q 200 230 212 110" stroke="#7a4a2a" stroke-width="36" stroke-linecap="round" fill="none" />
+            <g stroke="#4a2c1a" stroke-width="3" fill="none" opacity="0.55">
+              <path d="M 200 680 Q 242 678 246 680" />
+              <path d="M 200 620 Q 240 618 244 620" />
+              <path d="M 198 560 Q 238 558 242 560" />
+              <path d="M 196 500 Q 234 498 238 500" />
+              <path d="M 192 440 Q 230 438 234 440" />
+              <path d="M 188 380 Q 224 378 228 380" />
+              <path d="M 184 320 Q 218 318 222 320" />
+              <path d="M 180 260 Q 214 258 218 260" />
+              <path d="M 178 200 Q 210 198 214 200" />
+            </g>
+            <circle cx="225" cy="120" r="16" fill="#5a3220" stroke="#3a2010" stroke-width="2" />
+            <circle cx="195" cy="128" r="16" fill="#5a3220" stroke="#3a2010" stroke-width="2" />
+            <circle cx="215" cy="138" r="14" fill="#4a2818" stroke="#2a1408" stroke-width="2" />
+            <g fill="#0f5a2a" stroke="#073d20" stroke-width="2.5">
+              <path d="M 212 100 Q 340 30 400 90 Q 310 70 212 105 Z" />
+              <path d="M 212 100 Q 320 90 400 200 Q 300 160 212 110 Z" />
+              <path d="M 212 100 Q 350 180 390 290 Q 290 200 205 115 Z" />
+              <path d="M 212 100 Q 80 30 20 90 Q 120 70 212 105 Z" />
+              <path d="M 212 100 Q 100 90 20 200 Q 120 160 212 110 Z" />
+              <path d="M 212 100 Q 70 180 20 290 Q 130 200 205 115 Z" />
+            </g>
+            <g fill="#1f7a3d" opacity="0.85">
+              <path d="M 212 105 Q 300 90 370 110 Q 290 100 212 115 Z" />
+              <path d="M 212 105 Q 125 90 50 110 Q 125 100 212 115 Z" />
+              <path d="M 212 100 Q 205 30 225 -20 Q 205 30 212 100 Z" />
+            </g>
+            <g stroke="#063d1e" stroke-width="2" fill="none" opacity="0.7">
+              <path d="M 212 100 L 375 95" />
+              <path d="M 212 100 L 375 195" />
+              <path d="M 212 100 L 382 285" />
+              <path d="M 212 100 L 50 95" />
+              <path d="M 212 100 L 50 195" />
+              <path d="M 212 100 L 40 285" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- ===== FLOATING SPARKLES (hearts + leaves only) ===== -->
+        <div class="layer layer-coins" data-parallax="0.9" aria-hidden="true">
+          <svg class="art-coin coin-heart-1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 50 88 C 20 65 8 45 18 28 C 28 14 45 18 50 32 C 55 18 72 14 82 28 C 92 45 80 65 50 88 Z" fill="#ff5e7a" stroke="#fff" stroke-width="4" />
+          </svg>
+          <svg class="art-coin coin-heart-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 50 88 C 20 65 8 45 18 28 C 28 14 45 18 50 32 C 55 18 72 14 82 28 C 92 45 80 65 50 88 Z" fill="#ff8fa3" stroke="#fff" stroke-width="4" />
+          </svg>
+          <svg class="art-coin coin-leaf" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 20 80 Q 40 30 80 20 Q 70 60 20 80 Z" fill="#2b8a4a" stroke="#073d20" stroke-width="3" />
+            <path d="M 20 80 Q 50 50 75 25" stroke="#073d20" stroke-width="2.5" fill="none" />
+          </svg>
+        </div>
+
+        <!-- Title overlay -->
+        <div class="hero-titlewrap">
+          <h1 class="hero-title">
+            <span class="line1">MONTY-AARON</span>
+          </h1>
+          <div class="hero-badge">
+            <span class="dot"></span> LIVE ON SOLANA · 250M+ VIEWS
+          </div>
+          <div class="hero-actions">
+            <a
+              class="btn btn-yellow"
+              href="https://pump.fun/coin/6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump"
+              target="_blank"
+              rel="noopener"
+              >BUY ON PUMP.FUN</a
+            >
+            <a
+              class="btn btn-blue"
+              href="#story"
+              >MEET MONTY</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Page break divider (like moodengsol's Page break) -->
+      <div class="page-break" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================== SECTION-BG (stats + about + exchanges + tokenomics) ================== -->
+    <main class="section-bg">
+      <!-- ============ STATS (1B+/1M+/10B+) ============ -->
+      <section class="three-keys" id="stats">
+        <div class="key-card">
+          <div class="key-emoji" aria-hidden="true">👁️</div>
+          <h2 class="key-h">
+            250M+<br /><span class="key-sub">Views</span>
+          </h2>
+        </div>
+        <div class="key-card">
+          <div class="key-emoji" aria-hidden="true">❤️</div>
+          <h2 class="key-h">
+            1M+<br /><span class="key-sub">Likes</span>
+          </h2>
+        </div>
+        <div class="key-card">
+          <div class="key-emoji" aria-hidden="true">🐘</div>
+          <h2 class="key-h">
+            1B<br /><span class="key-sub">coded</span>
+          </h2>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="story" class="about-wrap">
+        <div class="about-text">
+          <h1 class="section-heading">About Monty</h1>
+          <p class="section-p">
+            Monty-Aaron is a baby Asian elephant rescued by
+            <strong>Following Giants</strong>,
+            a sanctuary funded by
+            <a href="https://www.worldanimalprotection.org/" target="_blank" rel="noopener">World Animal Protection</a>.
+            <br /><br />
+            His mom, <strong>Montif</strong>, was attacked and almost dying
+            before the foundation saved her. Today, mother and son are safe
+            and the world is falling in love with them.
+            <br /><br />
+            In a span of just <strong>3 days</strong>, Monty hit around
+            <strong>250 million views</strong>. Not even Moo Deng or Punch had
+            this kind of virality. A single Facebook post crossed
+            <strong>1 million likes</strong> — a record Moo Deng never
+            achieved.
+            <br /><br />
+            Monty-Aaron now lives on the Solana blockchain — making his jungle
+            legacy everlasting. <em>Welcome to the Monty-gang!</em>
+          </p>
+        </div>
+
+        <div class="about-image" data-parallax-root>
+          <!-- 3-layer composition (back/mid/front) inspired by moodengsol -->
+          <div class="img-back" data-parallax="0.06" aria-hidden="true"></div>
+          <img
+            class="img-front"
+            src="assets/3.jpg"
+            alt="Monty-Aaron in his bath tub at Following Giants"
+            loading="eager"
+            decoding="async"
+            width="500"
+            height="500"
+            data-parallax="0.18"
+          />
+          <div class="img-mid" data-parallax="0.12" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- ============ DONATION ============ -->
+      <section id="donation" class="donation">
+        <div class="donation-inner">
+          <div class="donation-text">
+            <h2 class="section-heading">Donation</h2>
+            <p class="section-p">
+              Pumpfun just rolled out the donation mechanic to stop greedy
+              platforms from attacking big runners. <strong>Punch</strong>
+              failed because devs only stole money instead of donating.
+              <strong>Monty changes the game.</strong>
+              <br /><br />
+              All trading fees from this coin are sent to
+              <strong>World Animal Protection</strong>, the foundation funding
+              Following Giants — the same organisation that saved Montif and
+              Monty.
+              <br /><br />
+              No tricks. No rugs. The next big runner is here — and it gives
+              back.
+              <br /><br />
+              Track every donation live on
+              <a href="https://www.donate.gg/charity-coins" target="_blank" rel="noopener"><strong>donate.gg</strong></a>.
+              We have already donated <strong>$20,000+</strong> to World
+              Animal Protection.
+            </p>
+            <div class="donation-tags">
+              <span class="tag">Fees → WAP</span>
+              <span class="tag">Following Giants</span>
+              <span class="tag">$20,000+ donated</span>
+              <span class="tag">Real Cause</span>
+            </div>
+          </div>
+          <div class="donation-photo">
+            <img src="assets/monty-13.jpg" alt="Monty-Aaron at Following Giants — funded by World Animal Protection" loading="eager" decoding="async" width="1206" height="1588" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXCHANGES (like moodengsol's grid) ============ -->
+      <section class="exchanges-section" id="buy">
+        <div class="exch-head">
+          <h1 class="section-heading">Where to buy</h1>
+          <p class="section-p center">
+            $MONTY is live on Pump.fun. The donation meta is in full swing —
+            ape in and let's run it together.
+          </p>
+        </div>
+
+        <div class="exch-grid">
+          <a
+            class="exch-card pump"
+            href="https://pump.fun/coin/6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="exch-emoji">🚀</div>
+            <span>Pump.fun</span>
+            <small>BUY NOW</small>
+          </a>
+          <a
+            class="exch-card"
+            href="https://jup.ag/?sell=So11111111111111111111111111111111111111112&buy=6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="exch-emoji">🪐</div>
+            <span>Jupiter</span>
+            <small>Swap $SOL → $Monty-Aaron</small>
+          </a>
+          <a
+            class="exch-card"
+            href="https://dexscreener.com/solana/e4w9fsbstg1e3zdfegbtifevxeqrxcwzexaixh5uxb8h"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="exch-emoji">📈</div>
+            <span>DexScreener</span>
+            <small>Live Chart</small>
+          </a>
+          <a
+            class="exch-card"
+            href="https://www.dextools.io/app/solana/pair-explorer/E4w9FSBStG1E3zdFEgbtifevXeQrXcWZexaiXh5Uxb8H"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="exch-emoji">🛠️</div>
+            <span>DexTools</span>
+            <small>Pair Explorer</small>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ TOKENOMICS ============ -->
+      <section class="tokenomics-section" id="tokenomics">
+        <h1 class="section-heading center on-blue">Tokenomics</h1>
+        <p class="section-p center on-blue">
+          Pumpfun tokenomics. No tricks — fees donated to World Animal
+          Protection.
+        </p>
+
+        <div class="tk-grid-inner">
+          <div class="tk-image" data-parallax-root>
+            <div class="tk-img-back" data-parallax="0.06" aria-hidden="true"></div>
+            <img
+              class="tk-img-front"
+              src="assets/4.png"
+              alt="Monty-Aaron playing with a red ball"
+              loading="eager"
+              decoding="async"
+              width="1120"
+              height="928"
+              data-parallax="0.16"
+            />
+            <div class="tk-img-mid" data-parallax="0.1" aria-hidden="true"></div>
+          </div>
+
+          <div class="tk-rows">
+            <div class="tk-row">
+              <p class="tk-key">Network</p>
+              <p class="tk-val">SOL</p>
+            </div>
+            <div class="tk-row">
+              <p class="tk-key">Tax</p>
+              <p class="tk-val">0%</p>
+            </div>
+            <div class="tk-row">
+              <p class="tk-key">Total Supply</p>
+              <p class="tk-val tk-val-sm">1,000,000,000</p>
+            </div>
+            <div class="tk-row">
+              <p class="tk-key">Fees</p>
+              <p class="tk-val tk-val-sm">→ World Animal Protection</p>
+            </div>
+            <div class="tk-row tk-ca">
+              <p class="tk-key">Contract Address</p>
+              <div class="ca-line">
+                <code id="ca">6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump</code>
+                <button id="copyBtn" type="button" class="copy-btn">Copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================== HOW TO BUY ================== -->
+    <section class="how-to-buy" id="howto">
+      <h1 class="section-heading center">How to buy</h1>
+
+      <div class="htb-grid">
+        <div class="outerblock">
+          <div class="step-corner" aria-hidden="true"></div>
+          <p class="step-text">
+            <span class="step-num">1)</span> <em>CREATE A WALLET</em>
+            <br /><br />
+            Visit <a href="https://phantom.app/" target="_blank" rel="noopener">phantom.app</a>
+            and follow the simple steps to create a new account with the
+            Phantom app or browser extension.
+          </p>
+        </div>
+        <div class="outerblock">
+          <div class="step-corner" aria-hidden="true"></div>
+          <p class="step-text">
+            <span class="step-num">2)</span> <em>GET SOME $SOL</em>
+            <br /><br />
+            Tap the BUY button in the app to purchase Solana, or deposit $SOL
+            to your Phantom wallet from the crypto exchange of your choice.
+          </p>
+        </div>
+        <div class="outerblock">
+          <div class="step-corner" aria-hidden="true"></div>
+          <p class="step-text">
+            <span class="step-num">3)</span> <em>SWAP $SOL FOR $Monty-Aaron</em>
+            <br /><br />
+            Tap the SWAP icon in Phantom and paste the $Monty-Aaron contract
+            address. Or open
+            <a href="https://pump.fun/coin/6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump" target="_blank" rel="noopener">Pump.fun</a>
+            directly and ape in.
+          </p>
+        </div>
+        <div class="outerblock">
+          <div class="step-corner" aria-hidden="true"></div>
+          <p class="step-text">
+            <span class="step-num">4)</span> <em>YOU'RE MONTY-GANG!</em>
+            <br /><br />
+            Welcome to the jungle family! Share the memes, raid with the
+            community, and help Monty break every record.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== VIDEO (Monty in action) ================== -->
+    <section class="video-section" id="videos">
+      <h1 class="section-heading center">Monty in action</h1>
+      <div class="video-grid">
+        <div class="video-card">
+          <video
+            src="assets/monty-1.mp4"
+            poster="assets/monty-bath.png"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+          <p class="video-caption">Monty learning to be a helper 🐘💦</p>
+        </div>
+        <div class="video-card">
+          <video
+            src="assets/monty-2.mp4"
+            poster="assets/monty-hose.png"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+          <p class="video-caption">Bath time at Following Giants 🛁🌴</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== LOVED BY MILLIONS ================== -->
+    <section class="footer-section">
+      <div class="loved">
+        <h1 class="section-heading center loved-h">Loved by millions</h1>
+        <div class="carousel">
+          <div class="carousel-track">
+            <a
+              href="https://www.instagram.com/p/DV0zwM4jaqp/?img_index=1"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+            >
+              <img src="assets/monty-bath.png" alt="Monty in bath" />
+              <span class="card-cap">@following.giants</span>
+            </a>
+            <a
+              href="https://www.facebook.com/share/r/1Cw2nZRR5d/"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+            >
+              <img src="assets/monty-hose.png" alt="Monty with hose" />
+              <span class="card-cap">1M+ likes Facebook</span>
+            </a>
+            <a
+              href="https://www.facebook.com/share/r/18PemnxC9i/"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+            >
+              <img src="assets/monty-tub.png" alt="Monty in the tub" />
+              <span class="card-cap">Breaking records</span>
+            </a>
+            <a
+              href="https://www.reddit.com/r/babyelephants/comments/1t9zhz1/baby_elephant_is_learning_how_to_be_a_helper_in/"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+            >
+              <img src="assets/monty-fg.png" alt="Monty with caretaker" />
+              <span class="card-cap">r/babyelephants</span>
+            </a>
+            <a
+              href="https://www.facebook.com/reel/1509441260402904"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+            >
+              <img src="assets/monty-bath.png" alt="Monty reel" />
+              <span class="card-cap">Facebook Reel · viral</span>
+            </a>
+            <a
+              href="https://www.instagram.com/p/DYFTDgWkqb7/?img_index=1"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+            >
+              <img src="assets/monty-fg.png" alt="Mom Montif story" />
+              <span class="card-cap">Montif's story</span>
+            </a>
+            <a
+              href="https://x.com/PogNyx/status/2054317916921749679"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+            >
+              <img src="assets/monty-hose.png" alt="Viral post" />
+              <span class="card-cap">@PogNyx · X</span>
+            </a>
+
+            <!-- duplicate set for seamless loop -->
+            <a
+              href="https://www.instagram.com/p/DV0zwM4jaqp/?img_index=1"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+              aria-hidden="true"
+            >
+              <img src="assets/monty-bath.png" alt="" />
+              <span class="card-cap">@following.giants</span>
+            </a>
+            <a
+              href="https://www.facebook.com/share/r/1Cw2nZRR5d/"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+              aria-hidden="true"
+            >
+              <img src="assets/monty-hose.png" alt="" />
+              <span class="card-cap">1M+ likes Facebook</span>
+            </a>
+            <a
+              href="https://www.facebook.com/share/r/18PemnxC9i/"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+              aria-hidden="true"
+            >
+              <img src="assets/monty-tub.png" alt="" />
+              <span class="card-cap">Breaking records</span>
+            </a>
+            <a
+              href="https://www.reddit.com/r/babyelephants/comments/1t9zhz1/baby_elephant_is_learning_how_to_be_a_helper_in/"
+              target="_blank"
+              rel="noopener"
+              class="carousel-card"
+              aria-hidden="true"
+            >
+              <img src="assets/monty-fg.png" alt="" />
+              <span class="card-cap">r/babyelephants</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================== SOCIALS ================== -->
+      <div class="socials" id="socials">
+        <h1 class="section-heading center bottom">Socials</h1>
+        <div class="socials-grid">
+          <a href="https://x.com/montaronfansol" target="_blank" rel="noopener" class="soc-circle">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2H21.5l-7.5 8.57L23 22h-6.79l-5.32-6.96L4.77 22H1.5l8.04-9.19L1 2h6.91l4.81 6.36L18.24 2z"/></svg>
+            <span>X / Twitter</span>
+          </a>
+          <a href="https://x.com/i/communities/2018434774877327545" target="_blank" rel="noopener" class="soc-circle">
+            <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 12c5.33 0 10 2.69 10 6v2H2v-2c0-3.31 4.67-6 10-6z"/></svg>
+            <span>Community</span>
+          </a>
+        </div>
+        <p class="foot-disclaimer">
+          © 2026 Monty-Aaron. Made for memes. Not financial advice.
+          Fees donated to <a href="https://www.worldanimalprotection.org/" target="_blank" rel="noopener">World Animal Protection</a>.
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

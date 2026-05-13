@@ -1,0 +1,384 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monty-Aaron</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .title-shadow {
+        text-shadow:
+          4px 4px 0 #075b9a,
+          8px 8px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .soft-bubble {
+        background:
+          radial-gradient(circle at top left, rgba(255, 255, 255, 0.5), transparent 35%),
+          linear-gradient(135deg, #13b8f2, #0478c8);
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#e8f8ff] text-[#063b63]">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-white/40 bg-white/80 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+        <a href="#" class="flex items-center gap-3">
+          <img
+            src="1.jpg"
+            alt="Monty-Aaron logo"
+            class="h-12 w-12 rounded-full border-4 border-[#0aa7e8] object-cover"
+          />
+
+          <div>
+            <p class="text-lg font-black leading-none text-[#064d8f]">
+              Monty-Aaron
+            </p>
+            <p class="text-xs font-bold text-[#0aa7e8]">
+              Baby elephant meme
+            </p>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-black uppercase text-[#064d8f] md:flex">
+          <a href="#about" class="hover:text-[#0aa7e8]">About</a>
+          <a href="#tokenomics" class="hover:text-[#0aa7e8]">Tokenomics</a>
+          <a href="#buy" class="hover:text-[#0aa7e8]">How to Buy</a>
+          <a href="#socials" class="hover:text-[#0aa7e8]">Socials</a>
+        </nav>
+
+        <a
+          href="https://pump.fun/coin/6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-full bg-[#ffd84d] px-5 py-3 text-sm font-black uppercase text-[#064d8f] shadow-[0_6px_0_#e5a900] transition hover:-translate-y-1"
+        >
+          Buy Now
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="relative overflow-hidden">
+        <div class="absolute left-[-80px] top-[80px] h-[220px] w-[220px] rounded-full bg-[#b8ecff] blur-3xl"></div>
+        <div class="absolute right-[-80px] top-[180px] h-[260px] w-[260px] rounded-full bg-[#ffe88a] blur-3xl"></div>
+
+        <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 md:grid-cols-2 md:py-20">
+          <!-- Text -->
+          <div class="relative z-10 text-center md:text-left">
+            <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-lg">
+              <span class="h-3 w-3 rounded-full bg-[#12b981]"></span>
+              <span class="text-sm font-black uppercase text-[#064d8f]">
+                Live on Solana
+              </span>
+            </div>
+
+            <h1 class="title-shadow text-5xl font-black uppercase leading-[0.9] text-[#0aa7e8] sm:text-6xl lg:text-8xl">
+              Monty<br />
+              Aaron
+            </h1>
+
+            <p class="mx-auto mt-6 max-w-xl text-lg font-bold leading-relaxed text-[#31566f] md:mx-0">
+              The internetâs cutest baby elephant with jungle energy, blue vibes,
+              and a community built for memes, raids, stickers, and fun.
+            </p>
+
+            <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
+              <a
+                href="https://pump.fun/coin/6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rounded-full bg-[#ffd84d] px-8 py-4 text-center text-base font-black uppercase text-[#064d8f] shadow-[0_7px_0_#e5a900] transition hover:-translate-y-1"
+              >
+                Buy Monty
+              </a>
+
+              <a
+                href="https://x.com/i/communities/2018434774877327545"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rounded-full bg-[#064d8f] px-8 py-4 text-center text-base font-black uppercase text-white shadow-[0_7px_0_#032c52] transition hover:-translate-y-1"
+              >
+                Join Community
+              </a>
+            </div>
+
+            <div class="mt-8 rounded-2xl bg-white p-4 shadow-xl">
+              <p class="text-xs font-black uppercase text-[#0aa7e8]">
+                Contract Address
+              </p>
+
+              <p class="mt-1 break-all text-sm font-bold text-[#064d8f]">
+                6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump
+              </p>
+            </div>
+          </div>
+
+          <!-- Mascot -->
+          <div class="relative z-10">
+            <div class="soft-bubble rounded-[40px] border-[10px] border-white p-5 shadow-2xl">
+              <img
+                src="1.jpg"
+                alt="Monty-Aaron mascot"
+                class="mx-auto w-full max-w-[470px] rounded-[30px] object-cover"
+              />
+            </div>
+
+            <div class="mx-auto -mt-7 w-[85%] rounded-full bg-white px-5 py-4 text-center shadow-xl">
+              <p class="text-lg font-black uppercase text-[#064d8f]">
+                Cute. Loud. Memeable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner -->
+      <section class="px-4 pb-14">
+        <div class="mx-auto max-w-7xl overflow-hidden rounded-[34px] border-[8px] border-white bg-white shadow-2xl">
+          <img
+            src="2.jpg"
+            alt="Monty-Aaron jungle banner"
+            class="h-[190px] w-full object-cover sm:h-[260px] md:h-[360px]"
+          />
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="px-4 py-14">
+        <div class="mx-auto grid max-w-7xl items-center gap-8 md:grid-cols-[0.9fr_1.1fr]">
+          <div class="overflow-hidden rounded-[34px] border-[8px] border-white bg-white shadow-2xl">
+            <img
+              src="3.jpg"
+              alt="Baby elephant"
+              class="h-[360px] w-full object-cover md:h-[470px]"
+            />
+          </div>
+
+          <div class="rounded-[34px] bg-white p-7 shadow-2xl md:p-10">
+            <p class="mb-3 text-sm font-black uppercase text-[#0aa7e8]">
+              About the meme
+            </p>
+
+            <h2 class="text-4xl font-black uppercase leading-tight text-[#064d8f] md:text-5xl">
+              Meet the baby elephant taking over the jungle.
+            </h2>
+
+            <p class="mt-5 text-lg font-bold leading-relaxed text-[#31566f]">
+              Monty-Aaron is made for people who love cute animals, funny memes,
+              and community-driven crypto culture.
+            </p>
+
+            <p class="mt-4 text-lg font-bold leading-relaxed text-[#31566f]">
+              Simple idea: a lovable elephant mascot, a clean website, strong
+              visuals, and a community that can turn Monty into a recognizable
+              meme.
+            </p>
+
+            <div class="mt-7 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-2xl bg-[#e8f8ff] p-4 text-center">
+                <h3 class="text-2xl font-black text-[#064d8f]">Cute</h3>
+                <p class="text-sm font-bold text-[#31566f]">Mascot first</p>
+              </div>
+
+              <div class="rounded-2xl bg-[#e8f8ff] p-4 text-center">
+                <h3 class="text-2xl font-black text-[#064d8f]">Viral</h3>
+                <p class="text-sm font-bold text-[#31566f]">Easy to share</p>
+              </div>
+
+              <div class="rounded-2xl bg-[#e8f8ff] p-4 text-center">
+                <h3 class="text-2xl font-black text-[#064d8f]">Fun</h3>
+                <p class="text-sm font-bold text-[#31566f]">No boring vibes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tokenomics -->
+      <section id="tokenomics" class="px-4 py-14">
+        <div class="mx-auto max-w-7xl rounded-[40px] bg-[#064d8f] p-7 text-white shadow-2xl md:p-10">
+          <div class="mx-auto max-w-2xl text-center">
+            <p class="text-sm font-black uppercase text-[#ffd84d]">
+              Tokenomics
+            </p>
+
+            <h2 class="mt-2 text-4xl font-black uppercase md:text-5xl">
+              Simple and clean
+            </h2>
+
+            <p class="mt-4 font-bold text-white/80">
+              Built for community, memes, and easy sharing.
+            </p>
+          </div>
+
+          <div class="mt-9 grid gap-5 md:grid-cols-3">
+            <div class="rounded-[28px] bg-white p-7 text-center text-[#064d8f]">
+              <p class="text-sm font-black uppercase text-[#0aa7e8]">Network</p>
+              <h3 class="mt-2 text-5xl font-black">SOL</h3>
+            </div>
+
+            <div class="rounded-[28px] bg-white p-7 text-center text-[#064d8f]">
+              <p class="text-sm font-black uppercase text-[#0aa7e8]">Tax</p>
+              <h3 class="mt-2 text-5xl font-black">0%</h3>
+            </div>
+
+            <div class="rounded-[28px] bg-white p-7 text-center text-[#064d8f]">
+              <p class="text-sm font-black uppercase text-[#0aa7e8]">Vibe</p>
+              <h3 class="mt-2 text-5xl font-black">Meme</h3>
+            </div>
+          </div>
+
+          <div class="mt-6 rounded-[24px] bg-white p-5 text-center text-[#064d8f]">
+            <p class="text-xs font-black uppercase text-[#0aa7e8]">
+              Contract Address
+            </p>
+
+            <p class="mt-2 break-all text-sm font-black md:text-base">
+              6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Buy -->
+      <section id="buy" class="px-4 py-14">
+        <div class="mx-auto max-w-7xl">
+          <div class="text-center">
+            <p class="text-sm font-black uppercase text-[#0aa7e8]">
+              How to buy
+            </p>
+
+            <h2 class="mt-2 text-4xl font-black uppercase text-[#064d8f] md:text-5xl">
+              Get Monty-Aaron
+            </h2>
+
+            <a
+              href="https://pump.fun/coin/6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 inline-block rounded-full bg-[#ffd84d] px-8 py-4 text-base font-black uppercase text-[#064d8f] shadow-[0_7px_0_#e5a900] transition hover:-translate-y-1"
+            >
+              Buy on Pump.fun
+            </a>
+          </div>
+
+          <div class="mt-9 grid gap-5 md:grid-cols-4">
+            <div class="rounded-[30px] bg-white p-6 shadow-xl">
+              <div class="flex h-14 w-14 items-center justify-center rounded-full bg-[#ffd84d] text-2xl font-black text-[#064d8f]">
+                1
+              </div>
+              <h3 class="mt-5 text-xl font-black text-[#064d8f]">
+                Create wallet
+              </h3>
+              <p class="mt-2 font-bold leading-relaxed text-[#31566f]">
+                Download Phantom or another Solana wallet.
+              </p>
+            </div>
+
+            <div class="rounded-[30px] bg-white p-6 shadow-xl">
+              <div class="flex h-14 w-14 items-center justify-center rounded-full bg-[#ffd84d] text-2xl font-black text-[#064d8f]">
+                2
+              </div>
+              <h3 class="mt-5 text-xl font-black text-[#064d8f]">
+                Add SOL
+              </h3>
+              <p class="mt-2 font-bold leading-relaxed text-[#31566f]">
+                Buy SOL on an exchange and send it to your wallet.
+              </p>
+            </div>
+
+            <div class="rounded-[30px] bg-white p-6 shadow-xl">
+              <div class="flex h-14 w-14 items-center justify-center rounded-full bg-[#ffd84d] text-2xl font-black text-[#064d8f]">
+                3
+              </div>
+              <h3 class="mt-5 text-xl font-black text-[#064d8f]">
+                Swap
+              </h3>
+              <p class="mt-2 font-bold leading-relaxed text-[#31566f]">
+                Open Pump.fun and buy Monty-Aaron using the official link.
+              </p>
+            </div>
+
+            <div class="rounded-[30px] bg-white p-6 shadow-xl">
+              <div class="flex h-14 w-14 items-center justify-center rounded-full bg-[#ffd84d] text-2xl font-black text-[#064d8f]">
+                4
+              </div>
+              <h3 class="mt-5 text-xl font-black text-[#064d8f]">
+                Join
+              </h3>
+              <p class="mt-2 font-bold leading-relaxed text-[#31566f]">
+                Follow the socials and enter the Monty jungle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Socials -->
+      <section id="socials" class="px-4 py-14">
+        <div class="mx-auto max-w-7xl rounded-[40px] bg-white p-8 text-center shadow-2xl md:p-12">
+          <img
+            src="1.jpg"
+            alt="Monty-Aaron"
+            class="mx-auto h-24 w-24 rounded-full border-[6px] border-[#0aa7e8] object-cover"
+          />
+
+          <h2 class="mt-5 text-4xl font-black uppercase text-[#064d8f] md:text-5xl">
+            Join the jungle
+          </h2>
+
+          <p class="mx-auto mt-4 max-w-xl font-bold leading-relaxed text-[#31566f]">
+            Follow Monty-Aaron, share the memes, raid with the community, and
+            help the baby elephant grow.
+          </p>
+
+          <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+            <a
+              href="https://x.com/montaronfansol"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full bg-[#0aa7e8] px-8 py-4 font-black uppercase text-white shadow-[0_7px_0_#0576a8] transition hover:-translate-y-1"
+            >
+              X / Twitter
+            </a>
+
+            <a
+              href="https://x.com/i/communities/2018434774877327545"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full bg-[#064d8f] px-8 py-4 font-black uppercase text-white shadow-[0_7px_0_#032c52] transition hover:-translate-y-1"
+            >
+              Community
+            </a>
+
+            <a
+              href="https://pump.fun/coin/6aztCndC8EZwD9KmHjL2WWezCx1ZhQnavLG3ZrEtpump"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full bg-[#ffd84d] px-8 py-4 font-black uppercase text-[#064d8f] shadow-[0_7px_0_#e5a900] transition hover:-translate-y-1"
+            >
+              Buy Monty
+            </a>
+          </div>
+
+          <p class="mt-10 text-sm font-bold text-[#31566f]">
+            Â© 2025 Monty-Aaron. Made for memes.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
